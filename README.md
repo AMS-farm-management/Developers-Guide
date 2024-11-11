@@ -1,3 +1,7 @@
+# How To Run AMS Landing Page 
+To access the code here is the Lnik to the repository
+[AMS-Landing-Page](https://github.com/AMS-farm-management/ams-landing-page)
+
 # Project Structure
 
 | Folder/File                         | Description                  |
