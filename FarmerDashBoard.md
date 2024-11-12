@@ -606,7 +606,7 @@ fetchFarms();
   ```
 
 ## Setting Up the Project
-```
+```env
 # Base URL for the API server
 VITE_BASE_URL="http://localhost:5000/api"
 
