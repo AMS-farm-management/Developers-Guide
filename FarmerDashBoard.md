@@ -606,7 +606,7 @@ fetchFarms();
   ```
 
 ## Setting Up the Project
-
+```
 # Base URL for the API server
 VITE_BASE_URL="http://localhost:5000/api"
 
@@ -618,12 +618,13 @@ VITE_ADMIN_DOMAIN="http://localhost:5175"
 # Public VAPID Key
  - This key is safe to be shared and used for client-side push registration
 
-VITE_PUBLIC_VAPID_KEY="BCQf66nH3lcdtq7oZ4sAyyQYwmFCAN9l5gAxPdcqZCLuFRu0oqBtvybDxgL_rHkwHyVLIKqiDpJsVoJZ-vBvhx4"
+VITE_PUBLIC_VAPID_KEY="Bcdtq7oZ4sAyyQYwmFCAqBtvybDxgL_rHkwHyVLIKqiDpJsVoJZ-vBvhx4"
 
 # Private VAPID Key 
 - Keep this key secure; it should never be exposed publicly
 
-VITE_PRIVATE_VAPID_KEY="OeNOAi7TXaQLdob7B6KXVtDwq4D04MPeEuHij39cfDA"
+VITE_PRIVATE_VAPID_KEY="OeNOAiQLdob7B6KXVtDwq4D04MPeE9cfDA"
+```
 
 
 1. **Clone the repository**:
