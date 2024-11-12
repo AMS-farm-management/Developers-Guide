@@ -1,164 +1,164 @@
-# Attendant DashBoard Documentation
+# Attendants DashBoard  Documentation
 
-## Overview
-This React-based web application provides a user interface for managing various entities such as breeds, feeds, vaccines, and farmers. The application is organized into several features, each with its own set of components, services, and utilities for efficient data handling and user navigation.
+This is a React-based web application used for managing various entities such as breeds, feeds, vaccines, farmers, and more. It provides a user interface for managing and viewing reports, schedules, and other data related to farming activities.
 
----
+## Table of Contents
 
-## Components
-
-### 1. **DashNavigation**
-- A navigation component that provides a dashboard experience for the application.
-- **Used in**: Home, Breeds, Feeds, and Farmers features.
-
-### 2. **GeneralAnalysis**
-- Displays general analysis data for the application.
-- **Used in**: Home feature.
-
-### 3. **InDetailAnalysis**
-- Displays detailed analysis data for deeper insights.
-- **Used in**: Home feature.
-
-### 4. **OtherAnalysis**
-- Displays additional analysis data.
-- **Used in**: Home feature.
-
-### 5. **PieChart**
-- Displays a pie chart for visual data representation.
-- **Used in**: Home feature.
-
-### 6. **AlertsTable**
-- Displays a table of alerts for monitoring notifications.
-- **Used in**: Home feature.
-
-### 7. **FarmersTable**
-- Displays a table of farmers, listing relevant details.
-- **Used in**: Farmers feature.
-
-### 8. **FeedsTable**
-- Displays a table of feeds for managing feed data.
-- **Used in**: Feeds feature.
-
-### 9. **VaccinesTable**
-- Displays a table of vaccines for managing vaccination schedules.
-- **Used in**: Vaccines feature.
-
-### 10. **Steps**
-- Provides a step-by-step guide for specific processes.
-- **Used in**: Breeds feature.
-
----
-
-## Services
-
-### 1. **HomeService**
-- Fetches and manages data for the Home feature.
-
-### 2. **BreedService**
-- Provides data handling for the Breeds feature.
-
-### 3. **FeedService**
-- Manages data related to feeds for the Feeds feature.
-
-### 4. **VaccineService**
-- Handles data operations for the Vaccines feature.
-
-### 5. **FarmerService**
-- Provides data services for managing farmers.
-
----
-
-## Utilities
-
-### 1. **ApiErrorHandler**
-- A utility function to handle API errors consistently across the application.
-
-### 2. **useQuery**
-- A custom hook for making API queries and handling data fetching.
-
-### 3. **useNavigate**
-- A hook for programmatic navigation between routes.
-
-### 4. **useEditPassword**
-- A hook to manage password editing and related operations.
-
-### 5. **useVerifyEmail**
-- A hook to handle email verification processes.
-
----
+- [Features](#features)
+- [Components](#components)
+- [Services](#services)
+- [Utilities](#utilities)
+- [Routes](#routes)
+- [Configurations](#configurations)
+- [Dependencies](#dependencies)
+- [Environment Variables](#environment-variables)
 
 ## Features
 
-### 1. **Home**
-- Provides a comprehensive dashboard for monitoring and analysis.
-  
-### 2. **Breeds**
-- An interface for managing and organizing breed information.
-  
-### 3. **Feeds**
-- Allows users to manage feed data and schedules.
+This application is divided into multiple features that provide interfaces for managing different aspects of the farm:
 
-### 4. **Vaccines**
-- An interface for managing vaccine information and schedules.
+- **Home**: Dashboard for monitoring general farm data and reports.
+- **Breeds**: Interface for managing animal breeds.
+- **Feeds**: Interface for managing feed schedules and records.
+- **Vaccines**: Interface for managing vaccine schedules and data.
+- **Farmers**: Interface for managing farmers' data.
+- **Settings**: Configuration options for application management.
 
-### 5. **Farmers**
-- Provides tools for managing farmer-related data and interactions.
+## Components
 
-### 6. **Settings**
-- An interface for configuring application settings.
+### DashNavigation
+A component that provides the navigation layout for the application.
 
----
+### GeneralAnalysis
+Displays general analysis data for the farm reports. 
+
+### InDetailAnalysis
+Displays detailed analysis data for the farm reports.
+
+### OtherAnalysis
+Displays other kinds of analysis data relevant to farm activities.
+
+### PieChart
+A component that renders pie charts for visualizing data insights.
+
+### AlertsTable
+Displays a table of alerts related to farm activities.
+
+### FarmersTable
+Displays a table of farmer records.
+
+### FeedsTable
+Displays a table of feed records.
+
+### VaccinesTable
+Displays a table of vaccine data.
+
+### Steps
+Displays a step-by-step guide for managing breeds or other farm activities.
+
+## Services
+
+Services provide the core data-fetching and API interactions:
+
+- **HomeService**: Fetches data for the Home feature.
+- **BreedService**: Fetches data for the Breeds feature.
+- **FeedService**: Fetches data for the Feeds feature.
+- **VaccineService**: Fetches data for the Vaccines feature.
+- **FarmerService**: Fetches data for the Farmers feature.
+
+## Utilities
+
+These are utility hooks and functions used throughout the application:
+
+- **ApiErrorHandler**: Handles API errors gracefully.
+- **useQuery**: Custom hook for fetching data using React Query.
+- **useNavigate**: Provides navigation functionality within the application.
+- **useEditPassword**: Custom hook for editing passwords.
+- **useVerifyEmail**: Custom hook for verifying emails.
 
 ## Routes
 
-### 1. **Home**
-- Renders the Home feature.
+The application includes several routes to render different pages:
 
-### 2. **Breeds**
-- Renders the Breeds feature.
-
-### 3. **Feeds**
-- Renders the Feeds feature.
-
-### 4. **Vaccines**
-- Renders the Vaccines feature.
-
-### 5. **Farmers**
-- Renders the Farmers feature.
-
-### 6. **Settings**
-- Renders the Settings feature.
-
----
+- **Home**: `/`
+- **Breeds**: `/breeds`
+- **Feeds**: `/feeds`
+- **Vaccines**: `/vaccines`
+- **Farmers**: `/farmers`
+- **Settings**: `/settings`
 
 ## Configurations
 
-### 1. **tailwind.config.js**
-- Configuration file for Tailwind CSS, defining custom styles and utility classes.
-
-### 2. **index.html**
-- Configuration and template file for the application's HTML structure.
-
----
+- **tailwind.config.js**: Configures Tailwind CSS for utility-first styling.
+- **index.html**: Configures the application's HTML structure.
 
 ## Dependencies
 
-### 1. **React**
-- A JavaScript library for building user interfaces.
+The application relies on the following dependencies:
 
-### 2. **React Router**
-- Manages routing and navigation within the React application.
+- **React**: JavaScript library for building user interfaces.
+- **React Router**: Library for managing navigation and routing.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **React Query**: Library for data fetching and caching.
+- **React Icons**: Library for using icons within React.
 
-### 3. **Tailwind CSS**
-- A utility-first CSS framework for rapid UI development.
+## Environment Variables
 
-### 4. **React Query**
-- Handles data fetching, caching, and updates in a more efficient way.
+The following environment variables are used in the application:
 
-### 5. **React Icons**
-- A library for including icons within the React components easily.
+- `VITE_BASE_URL`: Base URL for the API.
+- `VITE_ATTENDANT_DOMAIN`: Domain for the attendant interface.
+- `VITE_ADMIN_DOMAIN`: Domain for the admin interface.
+- `VITE_PUBLIC_VAPID_KEY`: Public VAPID key for notifications.
+- `VITE_PRIVATE_VAPID_KEY`: Private VAPID key for notifications.
+
+
+## API Endpoints
+
+The application interacts with the following API endpoints:
+
+- **Authentication**:
+  - `POST /auth/login`: Login endpoint.
+  - `POST /auth/logout`: Logout endpoint.
+  - `POST /auth/verify`: Verify email.
+  - `POST /auth/change-password`: Change user password.
+  - `POST /auth/edit-user`: Edit user profile.
+
+- **Farmers**:
+  - `POST /farmer/registerFarmer`: Register a new farmer.
+  - `GET /attendant/getFarmers`: Get a list of farmers.
+  - `DELETE /farmer/deleteFarmer`: Delete a farmer.
+
+- **Breeds**:
+  - `POST /animal/breeds`: Add a new breed.
+  - `GET /animal/animalTypes`: Get a list of animal types.
+  - `GET /animal/breeds`: Get breeds under a specific type.
+  - `PUT /animal/update-breed`: Edit breed information.
+
+- **Feeds**:
+  - `GET /feeds/get-feeds`: Get all feed data.
+  - `POST /feeds/new`: Add a new feed record.
+  - `PUT /feeds/update`: Edit feed record.
+  - `DELETE /feeds/delete`: Delete a feed record.
+
+- **Vaccines**:
+  - `GET /vaccine/get-vaccines`: Get a list of vaccines.
+  - `POST /vaccine/add`: Add a new vaccine.
+  - `POST /vaccine/add-vaccine-schedule`: Add vaccine schedule.
+  - `PUT /vaccine/update`: Update vaccine information.
+  - `DELETE /vaccine/delete`: Delete a vaccine.
+
+- **Reports**:
+  - `GET /report/attendant-reports`: Get general reports.
+  - `GET /report/farmer-reports`: Get farm-specific reports.
+  - `GET /report/download-farm-report`: Download a farm report.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-### Notes
-- This documentation serves as a guide to understand the structure and functionality of the application, assisting in development and maintenance.
+Feel free to reach out if you have any questions or need further clarification!
+
+
