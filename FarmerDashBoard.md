@@ -177,7 +177,7 @@ The **FarmerDash** is a comprehensive and complex component that serves as a das
 
 
 # Animal DashBoard Documentation
-# AnimalDash Feature Documentation
+
 
 The **AnimalDash** feature is an extensive component that offers a comprehensive dashboard for managing animals, reports, and farms. It leverages multiple **React components**, **services**, **hooks**, **contexts**, and **APIs** to deliver a seamless user experience.
 
